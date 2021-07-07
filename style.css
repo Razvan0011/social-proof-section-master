@@ -1,0 +1,231 @@
+:root {
+    /* Primary */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;   
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Text box */
+.text-box {
+    width: 400px;
+    /* background-color: red; */
+}
+
+/* Heading */
+h1 {
+    color: var(--very-dark-magenta);   
+}
+/* Products text */
+.product {
+    color: var(--dark-grayish-magenta);
+    line-height: 23px;
+    margin-top: 12px;
+}
+
+/* Rating box */
+.rating {
+    background: var(--light-grayish-magenta);
+    border-radius: 10px;
+    width: 450px;
+}
+/* Stars rating */
+.stars ul {
+    list-style: none;
+    display: flex;
+    /* background-color: yellow; */
+    width: 123px;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Source text */
+.source {
+    color: var(--very-dark-magenta);
+    font-size: 13px;
+    font-weight: 700;
+    /* padding: 10px; */
+}
+
+/* Testimonial group */
+
+/* Testimonial box */
+.testimonial {
+    background: var(--very-dark-magenta);
+    width: 350px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 13px;
+    padding: 40px 30px 40px 30px;
+    height: 240px;
+}
+
+/* Reviewer */
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+/* Profile picture */
+.profile-pic {
+    background-color: violet;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+/* Name and verified box */
+.name_verified {
+    margin-left: 20px;
+}
+/* Name */
+.name {
+    font-weight: 700;
+}
+/* Verified buyer */
+.verified {
+    color: var(--soft-pink);
+    font-weight: 400;
+}
+/* Review */
+.review {
+    line-height: 20px;
+}
+
+
+
+/* Desktop ---------------------------------- */
+@media screen and (min-width: 800px) {
+    /* Body */
+    .bg {
+        height: 100vh;
+        width: 100%;
+        background: url("./img/bg-pattern-top-desktop.svg"), url("./img/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto;
+        background-position: top left, bottom right;
+    }
+
+    /* Main */
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 1100px;
+        margin: 130px auto 0 auto;
+        /* background-color: yellowgreen; */
+    }
+    /* Heading */
+    h1 {
+        display: inline-block;
+        font-size: 46px;
+        max-width: 400px;
+        line-height: 47px;
+    }
+
+    /* Top Box */
+    .top-box {
+        /* background-color: violet; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    
+
+    /* Rating box */
+    .ratings-box {
+        display: flex;
+        height: 204px;
+        width: 530px;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: brown; */
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    /* Boxes for spacing the ratings */
+    .spatial-rating-box {
+        /* background-color: blue; */
+        width: 100%;
+    }
+    #first-box{
+        display: flex;
+    }
+    #second-box{
+        display: flex;
+        justify-content: center;
+    }
+    #third-box{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Ratings */
+    .rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-between; */
+        padding: 16px 30px 16px 30px;
+    }
+    /* Star rating */
+    .stars {
+        margin-right: 30px;
+    }
+
+    /* Testimonial group */
+    .testimonials-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: violet; */
+        height: 270px;
+    }
+
+    /* Testimonial box */
+    .testimonial-box {
+        /* background-color: wheat; */
+        height: 100%;
+    }
+    /* Testmonial boxes */
+    #first-test-box {
+        display: flex;
+        align-items: flex-start;
+    }
+    #second-test-box {
+        display: flex;
+        align-items: center;
+    }
+    #third-test-box {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+}
